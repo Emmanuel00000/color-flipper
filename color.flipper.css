@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(114, 215, 233);
+    box-shadow: 0 3px 20px #0077B6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 10px;
+}
+
+.heading {
+    padding-left: 150px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 2rem 0 2rem;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.link1 {
+    color: blue;
+}
+
+main {
+    margin: 150px;
+    display: grid;
+    grid-template-columns: 200px 330px 200px;
+    grid-row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: black;
+}
+
+.mainText {
+    background: rgb(231, 233, 114);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+button {
+    padding: 20px;
+    background: rgb(114, 215, 233);
+    box-shadow: 0 3px 20px black;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 10px;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: move 0.4s 1;
+            animation: move 0.4s 1;
+}
+
+@-webkit-keyframes move {
+    50% {
+        transform: scale(0.9, 0.9);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+}
+
+@keyframes move {
+    50% {
+        transform: scale(0.9, 0.9);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+}
